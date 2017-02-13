@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <span>I live inside the top-level DOM!</span>
+    <div id="target">
+        I live in the target div!
+    </div>
+    <script>
+    var shadowHost =document.querySelector("#target");
+    var shadowRoot=shadowHost.createShadowRoot();
+    console.log(shadowRoot);
+    shadowRoot.innerHTML="<span>I live inside a shadow DOM!</span>";
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Elements2</title>
+</head>
+
+<body>
+    <button is="x-button">I am custom button.</button>
+    <script>
+        var btnProto = Object.create(HTMLButtonElement.prototype);
+        btnProto.baz = function () {
+            alert("qux");
+        };
+
+        var XButton = document.registerElement("x-button", {
+            prototype: btnProto,
+            extends: 'button'
+        });
+        var xbtn = new XButton();
+        xbtn.innerText = "Hover over me!";
+        xbtn.addEventListener('mouseenter', function (e) {
+            e.target.baz();
+        });
+        document.body.appendChild(xbtn);
+    </script>
+</body>
+
+</html>

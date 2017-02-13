@@ -1,0 +1,21 @@
+{
+  "name": "modern-front-end-web",
+  "version": "1.0.0",
+  "description": "Start using the tools, technologies, and best practices that today's modern, interactive websites are built on. You'll start with a hands-on introduction to popular technologies such as ES6 and Web Components. You'll add new concepts and techniques as you progress, including time-saving practices, back-end technologies, and a solid grounding in ReactJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"http-server -p 8090 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liminjun/modern-front-end-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liminjun/modern-front-end-web/issues"
+  },
+  "homepage": "https://github.com/liminjun/modern-front-end-web#readme"
+}
